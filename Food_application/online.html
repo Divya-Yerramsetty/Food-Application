@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--title of the html file-->
+            <title>Pizza Express</title>
+             
+        <!--Icon to the page-->
+            <link rel="icon" href="Pizza-icon.jpg">
+        
+            <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scal=1.0, user-scalable=no">
+        
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        
+        <!--CSS external style-->
+            <link href="styles.css" rel="stylesheet"/>
+        
+        
+    </head>
+
+    <body>
+
+            <header id="background" class="sticky-top">
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <img src = "Pizza-icon.jpg" alt="Pizza" class="navbar-brand" style="width:40px;">
+                        <a class="navbar-brand" href="home.html">Pizza Express</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active"><a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="grouporder.html">Group Ordering</a></li>
+                                <!--li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li-->
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+
+        <div class="row">
+        <div class="col-md-6 offset-md-3 start">
+        <h3 align="center">PLEASE ENTER YOUR DETAILS FOR DELIVERY</h3> </br>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Name for the Order:</label> 
+                <input type="fullname" class="form-control" id="fullname" placeholder="Enter your full name">
+                
+                </br>
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" required="true" placeholder="Enter your email-address">
+                </br>
+                <label for="address">Address:</label>
+                <input type="address" class="form-control" id="address" required="true"placeholder="Address (line 1)">
+                </br>
+                <label for="address">Apt/Building #:</label>
+                <input type="address" class="form-control" id="address" placeholder="Address (line 2)">
+                </br>
+                <label for="state">State:</label>
+                    <select class="form-control" id="state" required="true">
+                    <option>TX</option>
+                    <option>NM</option>
+                    <option>OK</option>
+                    <option>AZ</option>
+                    <option>AR</option>
+                    <option>LA</option>
+                    </select>
+                </br>
+                <label for="preferences">Any special preferences:</label>
+                <textarea class="form-control" id="prefernces" rows="2"></textarea>     
+                <br> &nbsp &nbsp
+                <a class="btn btn-danger" href="menu.html">Take to Menu</a> &nbsp &nbsp
+                <button input type = "reset" type="button" class="btn btn-warning">Clear</button>     
+            </div>     
+        </form>
+        </div>
+        </div>
+    </body>
+    <footer>
+            <div class="text-muted">
+                <h5 align="center" class="nav-text">All copyrights reserved @Pizza Express</h5>
+            </div>
+    </footer>
+</html>
+
